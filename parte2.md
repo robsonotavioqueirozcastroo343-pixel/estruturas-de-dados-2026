@@ -1,4 +1,3 @@
-
 ## PARTE 2 – EXPERIMENTO DE ORDENAÇÃO
 
 ### Código do Experimento (Python)
@@ -25,9 +24,9 @@ def bubble_sort(arr):
             if arr[j] > arr[j+1]:
                 arr[j], arr[j+1] = arr[j+1], arr[j]
                 c.trocas += 1
-                trocou = False
+                trocou = True
         # Otimização se já estiver ordenado
-        if trocou:
+        if not trocou:
             break
     return c
 
