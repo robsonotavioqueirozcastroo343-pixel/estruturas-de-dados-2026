@@ -47,9 +47,9 @@ def quick_sort(arr):
             if arr[j] <= pivo:
                 i += 1
                 arr[i], arr[j] = arr[j], arr[i]
-                c.trocas += 1  # Movimentação
+                c.trocas += 1  
         arr[i+1], arr[fim] = arr[fim], arr[i+1]
-        c.trocas += 1  # Movimentação do pivô
+        c.trocas += 1  
         return i + 1
 
     _quick_sort(0, len(arr) - 1)
@@ -59,7 +59,7 @@ tamanhos = [10, 20, 1000]
 resultados = {}
 
 for t in tamanhos:
-    # Gerando dados aleatórios idênticos para ambos
+   
     original = [random.randint(1, 10000) for _ in range(t)]
     copia_bubble = original.copy()
     copia_quick = original.copy()
