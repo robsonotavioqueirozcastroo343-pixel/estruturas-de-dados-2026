@@ -89,7 +89,7 @@ Baseia-se na estratégia de **Divisão e Conquista**. O algoritmo escolhe um ele
 import random
 import sys
 
-# Aumentar o limite de recursão para o Quick Sort caso necessário
+
 sys.setrecursionlimit(2000)
 
 class Contador:
@@ -138,12 +138,12 @@ def quick_sort(arr):
     _quick_sort(0, len(arr) - 1)
     return c
 
-# Execução do Experimento
+
 tamanhos = [10, 20, 1000]
 resultados = {}
 
 for t in tamanhos:
-    # Gerando dados aleatórios idênticos para ambos
+ 
     original = [random.randint(1, 10000) for _ in range(t)]
     copia_bubble = original.copy()
     copia_quick = original.copy()
@@ -158,7 +158,7 @@ for t in tamanhos:
         'q_mov': res_quick.trocas
     }
 
-# Exibição dos resultados formatados
+
 print(f"{'Tamanho':<10} | {'Bubble Comp':<12} | {'Bubble Troc':<12} | {'Quick Comp':<12} | {'Quick Mov':<12}")
 print("-" * 65)
 for t in tamanhos:
