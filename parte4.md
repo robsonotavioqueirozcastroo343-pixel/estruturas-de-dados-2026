@@ -108,7 +108,7 @@ def bubble_sort(arr):
                 arr[j], arr[j+1] = arr[j+1], arr[j]
                 c.trocas += 1
                 trocou = True
-        # Otimização se já estiver ordenado
+       
         if not trocou:
             break
     return c
@@ -130,9 +130,9 @@ def quick_sort(arr):
             if arr[j] <= pivo:
                 i += 1
                 arr[i], arr[j] = arr[j], arr[i]
-                c.trocas += 1  # Movimentação
+                c.trocas += 1  
         arr[i+1], arr[fim] = arr[fim], arr[i+1]
-        c.trocas += 1  # Movimentação do pivô
+        c.trocas += 1  
         return i + 1
 
     _quick_sort(0, len(arr) - 1)
