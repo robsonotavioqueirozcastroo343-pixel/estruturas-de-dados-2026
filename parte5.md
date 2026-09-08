@@ -75,7 +75,7 @@ if __name__ == "__main__":
         for _ in range(NUM_SENSORES)
     ]
 
-    limite = 28.0  # temperatura limite de exemplo
+    limite = 28.0  
 
     resultado = investigar_sensores(sensores, limite)
 
