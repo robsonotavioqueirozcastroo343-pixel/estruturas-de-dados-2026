@@ -25,7 +25,7 @@ def bubble_sort(arr):
                 arr[j], arr[j+1] = arr[j+1], arr[j]
                 c.trocas += 1
                 trocou = True
-        # Otimização se já estiver ordenado
+        
         if not trocou:
             break
     return c
