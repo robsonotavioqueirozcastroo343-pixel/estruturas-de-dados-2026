@@ -20,7 +20,7 @@ def investigar_sensores(sensores, limite):
     num_sensores = len(sensores)
     num_horarios = len(sensores[0]) if num_sensores > 0 else 0
 
-    # 1) Media de cada sensor
+  
     medias_sensores = []
     for i in range(num_sensores):
         soma_sensor = 0
@@ -28,7 +28,7 @@ def investigar_sensores(sensores, limite):
             soma_sensor += sensores[i][j]
         medias_sensores.append(soma_sensor / num_horarios)
 
-    # 2) Maior temperatura, sensor e horario -> loops aninhados percorrendo tudo
+
     maior_valor = sensores[0][0]
     sensor_maior = 0
     horario_maior = 0
@@ -47,8 +47,7 @@ def investigar_sensores(sensores, limite):
 
     media_geral = soma_geral / total_leituras
 
-    # 3) Quantidade de leituras acima do limite -> outro percurso pela matriz
-    acima_do_limite = 0
+  
     for i in range(num_sensores):
         for j in range(num_horarios):
             if sensores[i][j] > limite:
@@ -70,7 +69,7 @@ if __name__ == "__main__":
     NUM_SENSORES = 5
     NUM_HORAS = 24
 
-    # Simula a matriz de leituras (poderia vir de input() do usuario)
+ 
     sensores = [
         [round(random.uniform(18.0, 33.0), 1) for _ in range(NUM_HORAS)]
         for _ in range(NUM_SENSORES)
