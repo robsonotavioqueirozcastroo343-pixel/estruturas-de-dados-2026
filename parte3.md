@@ -26,10 +26,7 @@ def busca_sequencial_matriz(matriz, valor_procurado):
         "comparacoes": comparacoes
     }
 
-# Exemplo de uso para testes:
-# matriz_exemplo = [[1, 2], [3, 4]]
-# resultado = busca_sequencial_matriz(matriz_exemplo, 4)
-# print(resultado)
+
 ```
 
 ### Tabela de Resultados (Quantidade de Comparações)
