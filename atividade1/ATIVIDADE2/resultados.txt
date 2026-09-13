@@ -1,0 +1,18 @@
+
+=== Resultados - Vetores Aleatorios (Etapa 3) ===
+   Tam   Bub.Comp  Bub.Troc  Ins.Comp  Ins.Mov  Sel.Comp  Sel.Troc  Qck.Comp  Qck.Mov
+    10         45        26        33       35        45         6        29       15
+    20        175        87       101      106       190        15        65       41
+  1000     498324    243438    244432   244437    499500       990     10218     6231
+
+=== Resultados - Vetores Ja Ordenados (Desafio) ===
+   Tam   Bub.Comp  Bub.Troc  Ins.Comp  Ins.Mov  Sel.Comp  Sel.Troc  Qck.Comp  Qck.Mov
+    10          9         0         9        9        45         0        45       54
+    20         19         0        19       19       190         0       190      209
+  1000        999         0       999      999    499500         0    499500   500499
+
+=== Resultados - Vetores em Ordem Inversa (Desafio) ===
+   Tam   Bub.Comp  Bub.Troc  Ins.Comp  Ins.Mov  Sel.Comp  Sel.Troc  Qck.Comp  Qck.Mov
+    10         45        45        45       54        45         5        45       29
+    20        190       190       190      209       190        10       190      109
+  1000     499500    499500    499500   500499    499500       500    499500   250499
